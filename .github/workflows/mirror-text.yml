@@ -1,3 +1,5 @@
+name: text.json → l10n-anytype-ts
+
 on:
   push:
     paths:
@@ -27,8 +29,6 @@ jobs:
 
       - name: Copy files
         run: |
-          ls anytype-ts
-          ls l10n-anytype-ts
           cp -f anytype-ts/src/json/text.json l10n-anytype-ts/text.json
           cp -f anytype-ts/src/json/text.json l10n-anytype-ts/locales/en-US.json
       
