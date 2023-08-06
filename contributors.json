@@ -71,6 +71,12 @@
           "context": "https://github.com/anyproto/bot-test/issues/7#issuecomment-1666886805",
           "additionalInfo": "test of additional information",
           "createdAt": "2023-08-06T14:56:18.664Z"
+        },
+        {
+          "contributionType": "gallery",
+          "context": "https://github.com/anyproto/bot-test/pull/5#issuecomment-1666887095",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T14:57:10.674Z"
         }
       ]
     }
