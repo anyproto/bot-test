@@ -69,16 +69,16 @@
       ]
     }
   ],
-  types: [
-  "code",
-  "docs",
-  "l10n",
-  "design",
-  "tooling",
-  "infra",
-  "community",
-  "security",
-  "gallery",
-  "other"
-]
+  "types": [
+    "code",
+    "docs",
+    "l10n",
+    "design",
+    "tooling",
+    "infra",
+    "community",
+    "security",
+    "gallery",
+    "other"
+  ]
 }
