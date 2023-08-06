@@ -77,6 +77,12 @@
           "context": "https://github.com/anyproto/bot-test/pull/5#issuecomment-1666887095",
           "additionalInfo": "",
           "createdAt": "2023-08-06T14:57:10.674Z"
+        },
+        {
+          "contributionType": "security",
+          "context": "https://github.com/anyproto/bot-test/discussions/6#discussioncomment-6651276",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T14:57:42.541Z"
         }
       ]
     }
