@@ -59,6 +59,12 @@
           "context": "https://github.com/anyproto/bot-test/discussions/6#discussioncomment-6651135",
           "additionalInfo": "test of additional info",
           "createdAt": "2023-08-06T14:29:50.520Z"
+        },
+        {
+          "contributionType": "docs",
+          "context": "https://github.com/anyproto/bot-test/issues/7#issuecomment-1666879359",
+          "additionalInfo": "test of additional information",
+          "createdAt": "2023-08-06T14:30:48.253Z"
         }
       ]
     }
