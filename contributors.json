@@ -10,8 +10,93 @@
           "context": "https://github.com/anyproto/bot-test/pull/3#issuecomment-1666806372",
           "additionalInfo": "",
           "createdAt": "2023-08-06T10:43:37.876Z"
+        },
+        {
+          "contributionType": "code",
+          "context": "https://github.com/anyproto/bot-test/pull/3#issuecomment-1666806372",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T11:02:42.164Z"
+        },
+        {
+          "contributionType": "code",
+          "context": "https://github.com/anyproto/bot-test/pull/3#issuecomment-1666806372",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T11:07:27.389Z"
+        },
+        {
+          "contributionType": "code",
+          "context": "https://github.com/anyproto/bot-test/pull/3#issuecomment-1666832626",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T11:53:30.860Z"
+        },
+        {
+          "contributionType": "documentation",
+          "context": "https://github.com/anyproto/bot-test/pull/3#issuecomment-1666832928",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T11:54:39.843Z"
+        }
+      ]
+    },
+    {
+      "login": "any-association",
+      "name": "Any Association [bot]",
+      "avatar": "https://avatars.githubusercontent.com/u/139948520?v=4",
+      "contributions": [
+        {
+          "contributionType": "docs",
+          "context": "https://github.com/anyproto/bot-test/discussions/6#discussioncomment-6651122",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T14:26:23.859Z"
+        },
+        {
+          "contributionType": "infra",
+          "context": "https://github.com/anyproto/bot-test/discussions/6#discussioncomment-6651132",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T14:28:57.377Z"
+        },
+        {
+          "contributionType": "other",
+          "context": "https://github.com/anyproto/bot-test/discussions/6#discussioncomment-6651135",
+          "additionalInfo": "test of additional info",
+          "createdAt": "2023-08-06T14:29:50.520Z"
+        },
+        {
+          "contributionType": "docs",
+          "context": "https://github.com/anyproto/bot-test/issues/7#issuecomment-1666879359",
+          "additionalInfo": "test of additional information",
+          "createdAt": "2023-08-06T14:30:48.253Z"
+        },
+        {
+          "contributionType": "docs",
+          "context": "https://github.com/anyproto/bot-test/issues/7#issuecomment-1666886805",
+          "additionalInfo": "test of additional information",
+          "createdAt": "2023-08-06T14:56:18.664Z"
+        },
+        {
+          "contributionType": "gallery",
+          "context": "https://github.com/anyproto/bot-test/pull/5#issuecomment-1666887095",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T14:57:10.674Z"
+        },
+        {
+          "contributionType": "security",
+          "context": "https://github.com/anyproto/bot-test/discussions/6#discussioncomment-6651276",
+          "additionalInfo": "",
+          "createdAt": "2023-08-06T14:57:42.541Z"
         }
       ]
     }
+  ],
+  "types": [
+    "code",
+    "docs",
+    "l10n",
+    "design",
+    "tooling",
+    "infra",
+    "community",
+    "security",
+    "gallery",
+    "other"
   ]
 }
