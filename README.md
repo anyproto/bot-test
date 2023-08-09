@@ -3,4 +3,4 @@
 <!-- CONTRIBUTORS START -->
 <!-- CONTRIBUTORS END -->
 
-update
+license info
