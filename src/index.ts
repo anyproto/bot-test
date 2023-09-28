@@ -321,6 +321,22 @@ export = (app: Probot) => {
         issue_number: issueNumber,
         name: "inactive",
       });
+
+      // Remove label "stale"
+      await context.octokit.issues.removeLabel({
+        owner: org,
+        repo: repository,
+        issue_number: issueNumber,
+        name: "stale",
+      });
+
+      // temporary: remove "in-progress" label
+      await context.octokit.issues.removeLabel({
+        owner: org,
+        repo: repository,
+        issue_number: issueNumber,
+        name: "in-progress",
+      });
     } else if ((issueItemStatus != "🏗 In progress" && label == "stale") || label == "inactive") {
       throw new Error('Label "' + label + '" added, but issue #' + issueNumber + ' is not in "🏗 In progress" status.');
     } else {
