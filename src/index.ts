@@ -211,6 +211,14 @@ export = (app: Probot) => {
         // Change status to "🏗 In progress"
         GraphQL.changeItemStatus(projectID, issueItemID, "🏗 In progress");
 
+        // temporary: add "in-progress" label
+        await context.octokit.issues.addLabels({
+          owner: org,
+          repo: repository,
+          issue_number: issueNumber,
+          labels: ["in-progress"],
+        });
+
         // Add assignee
         await context.octokit.issues.addAssignees({
           owner: org,
@@ -238,6 +246,14 @@ export = (app: Probot) => {
       } else {
         // Change status to "🆕 New"
         GraphQL.changeItemStatus(projectID, issueItemID, "🆕 New");
+
+        // temporary: remove "in-progress" label
+        await context.octokit.issues.removeLabel({
+          owner: org,
+          repo: repository,
+          issue_number: issueNumber,
+          name: "in-progress",
+        });
 
         // Remove assignee
         await context.octokit.issues.removeAssignees({

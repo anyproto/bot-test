@@ -2,6 +2,7 @@ const { graphql } = require("@octokit/graphql");
 
 // specify the max number of items to fetch in a single request, max is 100
 const pagination = 10;
+const maxPagination = 100;
 
 // create a graphql client with authentication via access token
 const graphqlWithAuth = graphql.defaults({
@@ -36,7 +37,7 @@ export default {
       `query ($projectID: ID!) {
             node(id: $projectID) {
                 ... on ProjectV2 {
-                    fields(first: 20) {
+                    fields(first: $pagination) {
                         nodes {
                             ... on ProjectV2Field {
                                 id
@@ -113,14 +114,13 @@ export default {
     return fields?.node.fields.nodes.find((field: any) => field.name === "Lead Contributor")?.id;
   },
 
-  // TODO: check do i need content draft & pr?
-  // return the items (e.g. issues, drafts, pull requests) for a given project id
+  // return the items (issues) for a given project id
   async getProjectItems(projectID: any) {
     return await graphqlWithAuth(
-      `query ($projectID: ID!, $pagination: Int!) {
+      `query ($projectID: ID!, $pagination: Int!, $maxPagination: Int!) {
             node(id: $projectID) {
                 ... on ProjectV2 {
-                    items(first: $pagination) {
+                    items(first: $maxPagination) {
                         nodes{
                             id
                             fieldValues(first: $pagination) {
@@ -178,6 +178,7 @@ export default {
       {
         projectID: projectID,
         pagination: pagination,
+        maxPagination: maxPagination,
       }
     );
   },
@@ -205,7 +206,7 @@ export default {
     console.log("issueItem", issueItem);
     const pullRequestNumber = issueItem?.fieldValues.nodes.find((field: any) => field.pullRequests)?.pullRequests.nodes[0].number;
     const pullRequestRepo = issueItem?.fieldValues.nodes.find((field: any) => field.pullRequests)?.pullRequests.nodes[0].repository.name;
-    // TODO check this functionality
+    // TODO: check this functionality, although currently not used
     return { pullRequestNumber, pullRequestRepo };
   },
 
